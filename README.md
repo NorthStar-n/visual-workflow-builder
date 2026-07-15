@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+# Visual Workflow Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, node-based workflow editor built with **React**, **React Flow**, and **Zustand**. The application enables users to visually construct workflows by dragging, connecting, and configuring reusable nodes on an interactive canvas.
 
-## Available Scripts
+Inspired by modern AI workflow automation tools, this project focuses on building a scalable, reusable frontend architecture with an intuitive user experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Live Demo: *Coming Soon*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> GitHub: https://github.com/NorthStar-n/visual-workflow-builder
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Drag-and-drop workflow editor
+- Interactive node-based canvas
+- Multiple reusable node types
+  - Input
+  - Output
+  - LLM
+  - Text
+  - API
+  - PDF
+  - Email
+  - Vector Database
+- Dynamic node connections
+- Automatic handle generation for template variables
+- Responsive node resizing
+- Modern frosted-glass UI
+- Floating toolbar
+- Interactive minimap
+- Zoom and pan controls
+- Node deletion functionality
+- Centralized state management using Zustand
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
 
-### `npm run eject`
+- React
+- JavaScript (ES6+)
+- React Flow
+- CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### State Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Zustand
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Development Tools
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Git
+- GitHub
+- npm
+- Vite
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+visual-workflow-builder
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── nodes/
+│   ├── toolbar/
+│   ├── styles/
+│   ├── store/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── README.md
+└── .gitignore
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/NorthStar-n/visual-workflow-builder.git
+```
 
-### Making a Progressive Web App
+Navigate into the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd visual-workflow-builder
+```
 
-### Advanced Configuration
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm install
+```
 
-### Deployment
+Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm run dev
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+
+<img width="1913" height="970" alt="image" src="https://github.com/user-attachments/assets/b82db541-1501-498a-b6ae-7b1301d58acd" />
+<img width="1911" height="958" alt="image" src="https://github.com/user-attachments/assets/908128e6-baea-42c0-b8d3-1eb22d811755" />
+
+
+## Technical Highlights
+
+### Reusable Component Architecture
+
+Designed reusable node components to minimize duplication and simplify the creation of additional node types.
+
+### Dynamic Handle Generation
+
+Implemented automatic input handle creation by parsing template variables (e.g. `{{input}}`) within text nodes.
+
+### Centralized State Management
+
+Managed nodes, edges, and workflow interactions using Zustand, ensuring consistent synchronization across the application.
+
+### Modern UI
+
+Enhanced usability with:
+
+- Frosted glass navigation
+- Floating controls
+- Interactive minimap
+- Responsive layouts
+- Smooth drag-and-drop interactions
+
+---
+
+## Challenges
+
+One of the most technically challenging aspects of this project was designing a scalable architecture that allowed all node types to share common functionality while remaining flexible enough for custom behavior.
+
+Managing synchronized state between dynamically generated handles, node connections, and user interactions required careful component abstraction and efficient state management.
+
+---
+
+## Future Improvements
+
+- Save and Load workflows
+- Local storage persistence
+- JSON import/export
+- Undo / Redo functionality
+- Dark mode
+- Keyboard shortcuts
+- Backend integration
+- Real-time collaboration
+- Workflow execution engine
+
+---
+
+## Skills Demonstrated
+
+- Frontend Engineering
+- React Development
+- State Management
+- Component Design
+- UI/UX Development
+- Software Architecture
+- JavaScript
+- Graph-based Interfaces
+- Interactive Visualizations
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+**Nishitta Senthilkumar**
+
+GitHub: https://github.com/NorthStar-n
+
+LinkedIn: https://www.linkedin.com/in/nishitta-senthilkumar-028533317
