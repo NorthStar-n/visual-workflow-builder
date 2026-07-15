@@ -1,0 +1,53 @@
+.toolbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    z-index: 9999;
+
+    padding: 14px 20px;
+
+    border-radius: 20px;
+
+    background: rgba(246, 152, 152, 0);
+
+    backdrop-filter: blur(10px) saturate(50%);
+    -webkit-backdrop-filter: blur(10px) saturate(50%);
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.05),
+        inset 0 1px rgba(255,255,255,.25);
+}
+
+.toolbar-header {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #543308;
+    margin-bottom: 18px;
+}
+
+.toolbar-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.toolbar-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 18px 0;
+}
+
+.toolbar-subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #543308;
+    margin-bottom: 10px;
+}

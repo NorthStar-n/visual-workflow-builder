@@ -1,0 +1,27 @@
+:root{
+    --bg:#feffed;
+    --surface:#feffed;
+
+    --border:#E5E7EB;
+
+    --text:#392203;
+    --muted:#543308;
+
+    --primary:#111111;
+
+    --radius:12px;
+
+    --transition:.2s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Inter, system-ui, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}

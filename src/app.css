@@ -1,0 +1,21 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #feffed;
+}
+
+.app-toolbar {
+    flex-shrink: 0;
+}
+
+.app-workspace {
+    flex: 1;
+    overflow: hidden;
+}
+
+.app-footer {
+    flex-shrink: 0;
+    background: white;
+    border-top: 1px solid #E5E7EB;
+}

@@ -1,0 +1,81 @@
+.react-flow__controls {
+
+    border: none !important;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: rgba(255, 253, 234, 0.966);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+
+.react-flow__controls-button {
+
+    width: 35px !important;
+
+    height: 35px !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    color: #543308;
+
+    transition: .25s;
+}
+
+.react-flow__controls-button:hover {
+
+    background: rgba(52, 52, 5, 0.45) !important;
+
+    color: #543308;
+}
+
+.react-flow__controls-button svg {
+
+    width: 10px;
+
+    height: 10px;
+}
+
+.react-flow__minimap {
+
+    opacity: 0.75;
+
+    transform: scale(0.96);
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,.18);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.05);
+}
+
+.react-flow__minimap:hover{
+
+    opacity:1;
+
+    transform:scale(1);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.10);
+}
+
